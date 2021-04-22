@@ -1,0 +1,1 @@
+"use strict";var allSelect=document.querySelectorAll(".select");allSelect.forEach(function(e){new Choices(e,{searchEnabled:!1,shouldSort:!1,itemSelectText:""})});

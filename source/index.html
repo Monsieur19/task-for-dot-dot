@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Blanchard</title>
+
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="css/style.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <section class="order">
+    <div class="order__wrapper wrapper">
+      <h1 class="order__title">FTL: Прямая машина</h1>
+      <form class="form">
+        <fieldset class="form__route form__fieldset">
+          <legend class="form__title">Маршрут</legend>
+          <label class="form__route-from form__label">
+            <p class="form__label-title">Откуда</p>
+            <input type="text" class="form__route-from-input input">
+          </label>
+          <label class="form__route-to form__label">
+            <p class="form__label-title">Куда</p>
+            <input type="text" class="form__route-to-input input">
+          </label>
+        </fieldset>
+        <fieldset class="form__transport form__fieldset">
+          <legend class="form__title">Транспорт</legend>
+          <label class="form__carrying form__label">
+            <p class="form__label-title">Грузоподъёмность</p>
+            <select class="form__carrying-select select">
+              <option value="0">Не выбрана</option>
+              <option value="1">Вариант 1</option>
+              <option value="2">Вариант 2</option>
+              <option value="3">Вариант 3</option>
+              <option value="4">Вариант 4</option>
+              <option value="5">Вариант 5</option>
+            </select>
+          </label>
+          <label class="form__transport-method form__label">
+            <p class="form__label-title">Способ погрузки</p>
+            <select class="form__transport-method-select select">
+              <option value="0">Не выбран</option>
+              <option value="1">Задняя</option>
+              <option value="2">Передняя</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="form__cargo form__fieldset">
+          <legend class="form__title">Груз</legend>
+          <label class="form__type form__label">
+            <p class="form__label-title">Тип груза</p>
+            <select class="form__type-select select">
+              <option value="0">Не выбран</option>
+              <option value="1">Вариант 1</option>
+              <option value="2">Вариант 2</option>
+            </select>
+          </label>
+          <label class="form__class form__label">
+            <p class="form__label-title">Класс опасности</p>
+            <select class="form__class-select select">
+              <option value="0">Не выбран</option>
+              <option value="1">Класс 1</option>
+              <option value="2">Класс 2</option>
+              <option value="2">Класс 5 — Окисляющие вещества и органические перекиси</option>
+            </select>
+          </label>
+          <label class="form__networth form__label">
+            <p class="form__label-title">Объявленная ценность, ₽</p>
+            <input class="form__networth-input input" type="text" placeholder="&#8805; 1">
+          </label>
+          <label class="form__temperature form__label">
+            <input class="form__temperature-checkbox visually-hidden" type="checkbox">
+            <span class="form__temperature-mark"></span>
+            <p class="form__temperature-text">Требуется температурный режим</p>
+            <div class="form__temperature-labels">
+              <label class="form__label-from form__label">
+                <p class="form__label-title">От, °C</p>
+                <input class="form__from-input input" type="text">
+              </label>
+              <label class="form__label-to form__label">
+                <p class="form__label-title">До, °C</p>
+                <input class="form__to-input input" type="text">
+              </label>
+            </div>
+          </label>
+        </fieldset>
+        <fieldset class="form__time form__fieldset">
+          <legend class="form__title">Время</legend>
+          <div class="form__time-top">
+            <span>Когда прибыть на точку</span>
+            <span class="form__time-distance">700 км в день</span>
+          </div>
+          <div class="form__time-address">
+            <p class="form__time-address-text">Адрес не указан</p>
+            <button class="form__time-btn">Не выбрано</button>
+          </div>
+          <div class="form__time-address disabled">
+            <p class="form__time-address-text">Адрес не указан</p>
+            <button class="form__time-btn">Не выбрано</button>
+          </div>
+          <label class="form__comment form__label">
+            <p class="form__label-title">Комментарий к заказу</p>
+            <textarea class="form__comment-textarea" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+          </label>
+        </fieldset>
+        <div class="form__error">Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</div>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/choices.min.js"></script>
+  <script src="js/index.js"></script>
+  
+</body>
+
+</html>
